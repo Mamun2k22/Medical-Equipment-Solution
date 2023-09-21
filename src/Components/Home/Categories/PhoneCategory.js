@@ -32,7 +32,7 @@ export function PhoneCategory() {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-    <section className="px-5 md:px-10  mt-20">
+    <section className="px-5 md:px-10  mt-20 lg:hidden">
       <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
         <AccordionHeader onClick={() => handleOpen(1)} className=" text-white">
           Products
