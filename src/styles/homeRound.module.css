@@ -1,0 +1,13 @@
+.leftRounder  {
+   position: absolute;
+    border-top-right-radius: 1000px;
+    background-color: #ffffff;
+    height: 20%;
+    width: 28%;
+    bottom: -50px;
+     
+    
+  }
+  
+  /* Global CSS */
+

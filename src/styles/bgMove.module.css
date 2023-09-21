@@ -1,0 +1,25 @@
+
+.hoverBgSlide {
+  position: relative;
+  overflow: hidden;
+}
+
+.hoverBgSlide::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #b70909;
+  z-index: -1;
+  transition: width 0.4s ease-in-out;
+}
+
+.hoverBgSlide:hover::before {
+  width: 100%;
+}
+.hoverBgSlide:hover h2,
+.hoverBgSlide:hover p {
+  color: white;
+}

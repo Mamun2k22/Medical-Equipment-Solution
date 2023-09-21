@@ -3,20 +3,66 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+   background-color: white;
+   color: black;
+}
+/* styles.css */
+/* Hide the vertical scrollbar */
+::-webkit-scrollbar {
+  width: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+/* Hide the horizontal scrollbar */
+::-webkit-scrollbar:horizontal {
+  height: 0;
+}
+/* In your CSS file, e.g., styles/globals.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container {
+  height: 100vh; /* Adjust to the desired height */
+  overflow: hidden;
+  position: relative;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px); /* Adjust to the desired initial position */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.container.active .animate-on-scroll {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optionally, you can style the scrollbar track and thumb if needed */
+/*::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}*/
+
+/* For Firefox */
+/*scrollbar-width: none; /* Hide the scrollbar for Firefox */
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +70,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
