@@ -50,7 +50,9 @@ export function AboutUs() {
   }, []);
   return (
     <div className="mt-[1050px] md:mt-[1100px] lg:mt-[550px] px-5 md:px-10 lg:w-10/12 mx-auto lg:flex gap-10 md:mb-96">
-      <div className="basis-1/5">
+      <div data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" className="basis-1/5">
+      <h1 className="border-t-8  border-[#B70909] w-14"></h1>
         <h1 className="text-4xl font-bold mb-5">About Us</h1>
 
         <p className="mb-10 text-gray-700 font-medium">

@@ -35,7 +35,10 @@ const WhatsNew = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt x{" "}
           </h1>
         </div>
-        <div>
+        <div 
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <h1 className="border-t-8  border-[#B70909] w-14"></h1>
           <h1 className="text-3xl font-bold">What’s New</h1>
           <h3>Explore our latest trends and activities.</h3>
         </div>
