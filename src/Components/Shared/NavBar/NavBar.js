@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 import { FiSearch, FiUser, FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
@@ -11,14 +12,14 @@ const NavBar = ({ isOpen, setIsOpen }) => {
     <div>
       <div className="flex justify-between w-10/12 mx-auto">
         <div className="flex justify-evenly gap-32">
-          <h1 className="text-3xl mt-4 lg:-mt-2 font-semibold">Mindary</h1>
+         <Link href={"/"}> <h1 className="text-3xl mt-4 lg:-mt-2 font-semibold">Mindary</h1></Link>
           <ul className="hidden  lg:flex gap-10">
-            <li className="hover:border-b-2 border-[#B70909]">Products and solution</li>
-            <li className="hover:border-b-2 border-[#B70909]">Innovation</li>
-            <li className="hover:border-b-2 border-[#B70909]">Services</li>
-            <li className="hover:border-b-2 border-[#B70909]">ESG</li>
-            <li className="hover:border-b-2 border-[#B70909]">Career</li>
-            <li className="hover:border-b-2 border-[#B70909]">About us</li>
+            <li className="hover:border-b-2 border-[#B70909] cursor-pointer">Products and solution</li>
+            <li className="hover:border-b-2 border-[#B70909] cursor-pointer">Innovation</li>
+            <li className="hover:border-b-2 border-[#B70909] cursor-pointer">Services</li>
+            <li className="hover:border-b-2 border-[#B70909] cursor-pointer">ESG</li>
+            <li className="hover:border-b-2 border-[#B70909] cursor-pointer">Career</li>
+            <li className="hover:border-b-2 border-[#B70909] cursor-pointer">About us</li>
           </ul>
         </div>
         <ul className="flex gap-5 lg:gap-10">

@@ -12,5 +12,3 @@ module.exports = withMT(
   }
   
 )
-
-// C7000B

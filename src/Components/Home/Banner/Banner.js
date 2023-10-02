@@ -1,18 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useRef, useState } from "react";
-import image1 from "../../../images/banner/homepage-banner-pc (1).png";
-import NavBar from "@/Components/Shared/NavBar/NavBar";
-import TopNavBar from "@/Components/Shared/NavBar/TopNavBar";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import styles from "../../../styles/homeRound.module.css";
 import smallImage from "../../../images/banner/s4-bg-2@web.png";
 import Image from "next/image";
+import NavBarEffect from "@/Components/Shared/NavBar/NavBarEffect";
 
 const Banner = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
   const [activeColor, setActiveColor] = useState(0);
   const sliderRef = useRef(null);
   const settings = {
@@ -179,7 +172,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="hidden lg:flex">
+      {/* <div className="hidden lg:flex">
       <div
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -191,9 +184,9 @@ const Banner = () => {
       >
         <TopNavBar></TopNavBar>
       </div>
-      </div>
-      <div className="border-t absolute top-10 w-full hidden lg:flex"></div>
-      <div className="hidden lg:flex">
+      </div> */}
+
+      {/* <div className="hidden lg:flex">
         <div
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -205,9 +198,9 @@ const Banner = () => {
         >
           <NavBar></NavBar>
         </div>
-      </div>
+      </div> */}
 
-      <div
+      {/* <div
         className={
           isOpen
             ? "absolute top-0    bg-white w-full lg:hidden"
@@ -215,8 +208,10 @@ const Banner = () => {
         }
       >
         <NavBar isOpen={isOpen} setIsOpen={setIsOpen}></NavBar>
-      </div>
-      <div className="divider absolute top-6 hidden lg:flex"></div>
+      </div> */}
+      {/* <div className="divider absolute top-6 hidden lg:flex"></div> */}
+
+      <NavBarEffect></NavBarEffect>
     </div>
   );
 };
