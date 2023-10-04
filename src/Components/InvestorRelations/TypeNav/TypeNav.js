@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 
-const TypeNav = () => {
-  const [colorChange, setColorChange] = useState("");
+const TypeNav = ({setColorChange, colorChange}) => {
+  
   const settings = {
     dots: false,
     infinite: false,

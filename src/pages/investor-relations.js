@@ -1,9 +1,15 @@
+import AnnualReport from "@/Components/InvestorRelations/AnnualReport/AnnualReport";
 import CompanyOverview from "@/Components/InvestorRelations/CompanyOverview/CompanyOverview";
+import FAQ from "@/Components/InvestorRelations/FAQ/FAQ";
+import Governance from "@/Components/InvestorRelations/Governance/Governance";
+import LatestRelease from "@/Components/InvestorRelations/LatestRelease/LatestRelease";
 import TypeNav from "@/Components/InvestorRelations/TypeNav/TypeNav";
 import NavBarEffect from "@/Components/Shared/NavBar/NavBarEffect";
-import React from "react";
+import React, { useState } from "react";
 
 const InvestorRelations = () => {
+  const [colorChange, setColorChange] = useState("");
+  console.log(colorChange);
   return (
     <section className="">
       <div
@@ -21,8 +27,23 @@ const InvestorRelations = () => {
           <h1 className="text-6xl text-white ">Investor Relations</h1>
         </div>
       </div>
-      <TypeNav></TypeNav>
-      <CompanyOverview></CompanyOverview>
+      <TypeNav
+        colorChange={colorChange}
+        setColorChange={setColorChange}
+      ></TypeNav>
+      {(colorChange === "" || colorChange === "overview") && <CompanyOverview></CompanyOverview>}
+        {
+          colorChange ==="releases" && <LatestRelease></LatestRelease>
+        }
+        {
+          colorChange === "report" && <AnnualReport></AnnualReport>
+        }
+        {
+          colorChange === "governance" && <Governance></Governance>
+        }
+        {
+          colorChange === "FAQ" && <FAQ></FAQ>
+        }
       <NavBarEffect></NavBarEffect>
     </section>
   );
