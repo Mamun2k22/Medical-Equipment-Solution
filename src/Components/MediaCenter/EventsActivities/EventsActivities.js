@@ -48,7 +48,7 @@ const EventsActivities = () => {
   return (
     <div>
       <h1 className="border-t-8  border-[#B70909] w-14"></h1>
-      <h1 className="text-5xl font-bold">Events & Activities</h1>
+      <h1 className="text-4xl lg:text-5xl font-bold">Events & Activities</h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 my-20">
         {cards.map((card) => (
           <Card key={card.id} className="max-w-[24rem] overflow-hidden shadow-none">

@@ -8,7 +8,7 @@ const TopNavBar = () => {
       <ul className='flex justify-end gap-5 w-10/12 mx-auto pt-2'>
        <li className='flex gap-5 text-xs'> <Link href={"/media-center"}>Media Center </Link> <span>|</span></li>
        <li className='flex gap-5 text-xs'><Link href={"/investor-relations"}>Investors Relations</Link> <span>|</span></li>
-       <li className='flex gap-5 text-xs'>Contact Us <span>|</span></li>
+       <li className='flex gap-5 text-xs'><Link href={"/contact"}>Contact Us</Link> <span>|</span></li>
        <li className='text-xs flex gap-3'> <TfiWorld className='pt-[2px]'></TfiWorld> Select Region / Language</li>
        
       </ul>

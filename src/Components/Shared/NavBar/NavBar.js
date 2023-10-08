@@ -60,9 +60,9 @@ const NavBar = ({ isOpen, setIsOpen }) => {
         <li className="border-t border-b border-gray-400 py-3 px-8 md:px-[70px]">
           About us
         </li>
-        <li className='flex gap-5 text-xs border-t border-gray-400 py-3 px-8 md:px-[70px]'>Media Center <span></span></li>
-       <li className='flex gap-5 text-xs border-t border-gray-400 py-3 px-8 md:px-[70px]'>Investors Relations <span></span></li>
-       <li className='flex gap-5 text-xs border-t border-gray-400 py-3 px-8 md:px-[70px]'>Contact Us <span></span></li>
+        <li className='flex gap-5 text-xs border-t border-gray-400 py-3 px-8 md:px-[70px]'><Link href={"/media-center"}>Media Center</Link> <span></span></li>
+       <li className='flex gap-5 text-xs border-t border-gray-400 py-3 px-8 md:px-[70px]'><Link href={"/investor-relations"}>Investors Relations</Link> <span></span></li>
+       <li className='flex gap-5 text-xs border-t border-gray-400 py-3 px-8 md:px-[70px]'><Link href={"/contact"}>Contact Us</Link> <span></span></li>
        <li className='text-xs flex gap-2 border-t border-b border-gray-400 py-3 px-8 md:px-[70px]'> <TfiWorld className='pt-[2px]'></TfiWorld> Select Region / Language</li>
       </ul>
     </div>
