@@ -15,7 +15,7 @@ const InvestorRelations = () => {
       <div
         style={{
           backgroundImage:
-            'url("https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e10616-s-c12-eyeglasses_w_6355_1.jpg")',
+            'url("https://th.bing.com/th/id/R.994d5f45d609cbb2159d9c05d09fd608?rik=czvENW99m%2fXcNA&pid=ImgRaw&r=0")',
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           width: "100%",

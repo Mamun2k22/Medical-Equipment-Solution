@@ -18,7 +18,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
             <li className="hover:border-b-2 border-[#B70909] cursor-pointer">Innovation</li>
             <li className="hover:border-b-2 border-[#B70909] cursor-pointer">Services</li>
             <li className="hover:border-b-2 border-[#B70909] cursor-pointer">ESG</li>
-            <li className="hover:border-b-2 border-[#B70909] cursor-pointer">Career</li>
+            <Link href={"/career"}><li className="hover:border-b-2 border-[#B70909] cursor-pointer">Career</li></Link>
             <li className="hover:border-b-2 border-[#B70909] cursor-pointer">About us</li>
           </ul>
         </div>
@@ -56,7 +56,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
         <li className="border-t border-gray-400 py-3 px-8 md:px-[70px]">Innovation</li>
         <li className="border-t border-gray-400 py-3 px-8 md:px-[70px]">Services</li>
         <li className="border-t border-gray-400 py-3 px-8 md:px-[70px]">ESG</li>
-        <li className="border-t border-gray-400 py-3 px-8 md:px-[70px]">Career</li>
+       <Link href={"/career"}> <li className="border-t border-gray-400 py-3 px-8 md:px-[70px]">Career</li></Link>
         <li className="border-t border-b border-gray-400 py-3 px-8 md:px-[70px]">
           About us
         </li>
