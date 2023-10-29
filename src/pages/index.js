@@ -16,7 +16,7 @@ export default function Home() {
       <ProductsSolutions></ProductsSolutions>
       <WhatsNew></WhatsNew>
       <AboutUs></AboutUs>
-      <Categories></Categories>
+       
     </main>
   );
 }
